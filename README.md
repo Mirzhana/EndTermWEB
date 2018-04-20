@@ -1,0 +1,2 @@
+# EndTermWEB
+Django Project
