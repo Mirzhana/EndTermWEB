@@ -1,0 +1,24 @@
+
+
+{% block content %}
+    <h1 style="margin: 0 auto; color: RED">Django Blog</h1>
+    <hr>
+
+    {% if post_list %}
+    <ul >
+      {% for post in post_list %}
+      <li>
+        <h1 style="text-decoration: none; color: BLUE">{{ post.title }} </h1>
+        <button>Edit</button>
+        <button>Delete</button>
+        <h3>{{post.created_at}}</h3>
+        <p>{{post.body}}</p>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+    {% else %}
+      <p>There are no Post.</p>
+    {% endif %}       
+{% endblock %}

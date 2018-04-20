@@ -1,0 +1,16 @@
+{% block content %}
+
+ <h1 style="margin: 0 auto; color: RED">Django Blog</h1>
+     <hr>
+
+<h1>Title: {{ post.title }}</h1>
+        <button>Edit</button>
+        <button>Delete</button>
+<h3>{{post.id}}</h3>
+<h4><strong>description:</strong> {{ post.body }}</p>
+<h4><strong>Date:</strong> {{ post.created_at }}</p>
+
+
+
+
+{% endblock %}
